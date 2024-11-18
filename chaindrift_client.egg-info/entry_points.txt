@@ -1,0 +1,2 @@
+[console_scripts]
+chaindrift-client = chaindrift_client.ft_client:main

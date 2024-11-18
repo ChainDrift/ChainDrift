@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools >= 64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chaindrift-client"
+dynamic = ["version"]
+
+authors = [
+  {name = "Chaindrift Team"},
+  {name = "Chaindrift Team", email = "chaindrift@protonmail.com"},
+]
+
+description = "Chaindrift - Client scripts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPLv3"}
+# license = "GPLv3"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+  'requests >= 2.26.0',
+  'python-rapidjson >= 1.0',
+]
+
+
+[project.urls]
+Homepage = "https://github.com/chaindrift/chaindrift"
+Documentation = "https://chaindrift.io"
+"Bug Tracker" = "https://github.com/chaindrift/chaindrift/issues"
+
+
+[project.scripts]
+chaindrift-client = "chaindrift_client.ft_client:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chaindrift_client*"]
+exclude = ["tests", "tests.*"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "chaindrift_client.__version__"}

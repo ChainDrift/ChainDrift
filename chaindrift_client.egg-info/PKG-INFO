@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: chaindrift-client
+Version: 2024.11.dev0
+Summary: Chaindrift - Client scripts
+Author: Chaindrift Team
+Author-email: Chaindrift Team <chaindrift@protonmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/chaindrift/chaindrift
+Project-URL: Documentation, https://chaindrift.io
+Project-URL: Bug Tracker, https://github.com/chaindrift/chaindrift/issues
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.26.0
+Requires-Dist: python-rapidjson>=1.0
+
+# Chaindrift Client
+
+# ![chaindrift](https://raw.githubusercontent.com/chaindrift/chaindrift/develop/docs/assets/chaindrift_poweredby.svg)
+
+Provides a minimal rest client for the chaindrift rest api.
+
+Please check out the [main project](https://github.com/chaindrift/chaindrift) for more information or details.
