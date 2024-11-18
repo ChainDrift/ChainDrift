@@ -1,0 +1,8 @@
+ARG sourceimage=chaindriftorg/chaindrift
+ARG sourcetag=develop
+FROM ${sourceimage}:${sourcetag}
+
+# Install dependencies
+COPY requirements-chainai.txt /chaindrift/
+
+RUN pip install -r requirements-chainai.txt --user --no-cache-dir

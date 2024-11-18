@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+recursive-include chaindrift *.py
+recursive-include chaindrift/templates/ *.j2 *.ipynb
+include chaindrift/exchange/binance_leverage_tiers.json
+include chaindrift/rpc/api_server/ui/fallback_file.html
+include chaindrift/rpc/api_server/ui/favicon.ico
+
+prune tests
